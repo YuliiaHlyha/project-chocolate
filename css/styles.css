@@ -127,6 +127,14 @@ img {
   background-color: rgba(17, 17, 17, 0.6);
   padding: 380px 40px 40px 40px;
   border-radius: 30px;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/chocolate_main-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero {
   padding-bottom: 80px;
@@ -166,7 +174,20 @@ img {
   letter-spacing: -0.03em;
   color: #fff;
   margin-left: auto;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-btn-scroll::after {
+  content: "";
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-image: url(../images/facebook.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*--------------------------------------*/
@@ -323,8 +344,22 @@ img {
 .made-list {
 }
 
+.made-item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+  margin-right: 8px;
+}
+
+.made-item span {
+}
+
 .made-item {
   margin-bottom: 24px;
+  display: flex;
 }
 
 .made-item:last-child {
