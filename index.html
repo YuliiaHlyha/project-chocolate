@@ -462,66 +462,132 @@
     </main>
 
     <footer class="footer">
-      <p class="footer-text">
-        <span class="accent">Chocolate</span> a delicious cure for a bad day
-      </p>
-      <p class="footer-subtitle">Social networks</p>
-      <ul class="footer-soc-list">
-        <li class="footer-soc-item">
-          <a
-            class="footer-soc-link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            ><img src="./images/instagram.svg" alt="instagram"
-          /></a>
-        </li>
-        <li class="footer-soc-item">
-          <a
-            class="footer-soc-link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            ><img src="./images/facebook.svg" alt="facebook"
-          /></a>
-        </li>
-        <li class="footer-soc-item">
-          <a
-            class="footer-soc-link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            ><img src="./images/twitter.svg" alt="twitter"
-          /></a>
-        </li>
-      </ul>
-      <p class="footer-subtitle">Contact us</p>
-      <address class="footer-contacts">
-        <ul class="footer-contacts-list">
-          <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="tel:+380684439426"
-              >+380 (68) 443-94-26</a
-            >
+      <div class="container">
+        <p class="footer-text">
+          <span class="accent">Chocolate</span> a delicious cure for a bad day
+        </p>
+        <p class="footer-subtitle">Social networks</p>
+        <ul class="footer-soc-list">
+          <li class="footer-soc-item">
+            <a
+              class="footer-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              ><img src="./images/instagram.svg" alt="instagram"
+            /></a>
           </li>
-          <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="mailto:simplychoc@gmail.com"
-              >simplychoc@gmail.com</a
-            >
+          <li class="footer-soc-item">
+            <a
+              class="footer-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              ><img src="./images/facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li class="footer-soc-item">
+            <a
+              class="footer-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              ><img src="./images/twitter.svg" alt="twitter"
+            /></a>
           </li>
         </ul>
-      </address>
-
-      <ul class="footer-menu-list">
-        <li class="footer-menu-item">
-          <a class="footer-menu-link" href="">Home</a>
-        </li>
-        <li class="footer-menu-item">
-          <a class="footer-menu-link" href="">How it’s made?</a>
-        </li>
-        <li class="footer-menu-item">
-          <a class="footer-menu-link" href="">Chocolate is loved</a>
-        </li>
-      </ul>
+        <p class="footer-subtitle">Contact us</p>
+        <address class="footer-contacts">
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <a class="footer-contacts-link" href="tel:+380684439426"
+                >+380 (68) 443-94-26</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <a class="footer-contacts-link" href="mailto:simplychoc@gmail.com"
+                >simplychoc@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="footer-menu-list">
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="">Home</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="">How it’s made?</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="">Chocolate is loved</a>
+          </li>
+        </ul>
+      </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-open-btn">X</button>
+        <p class="modal-title title">
+          LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <label for="" class="modal-label"><span>Name</span></label>
+          <input
+            type="text"
+            class="modal-input"
+            placeholder="Enter name"
+            name="user-name"
+            id="user-name"
+          />
+          <input
+            type="text"
+            class="modal-input"
+            placeholder="Enter email"
+            name="user-email"
+          />
+          <input
+            type="text"
+            class="modal-input"
+            placeholder="Enter phone"
+            name="user-tel"
+          />
+          <div class="modal-field">
+            <label for="yes">yes</label>
+            <input type="radio" id="yes" name="question" value="yes" />
+            <label for="no">no</label>
+            <input type="radio" id="no" name="question" value="no" />
+          </div>
+
+          <div class="modal-field">
+            <label for="one">one</label>
+            <input type="checkbox" id="one" name="count" value="one" />
+            <label for="two">two</label>
+            <input type="checkbox" id="two" name="count" value="two" />
+            <label for="three">three</label>
+            <input type="checkbox" id="three" name="count" value="three" />
+          </div>
+
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              id="policy"
+              name="policy"
+              class="model-check"
+              value="true"
+            />
+            <label for="policy" class="check-text"
+              ><span></span>I accept the terms and conditions of the Privacy
+              Policy</label
+            >
+            <button type="submit" disabled>
+              Send<svg class="icon-icon" width="16" height="16">
+                <use href="./images/facebook.svg"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
