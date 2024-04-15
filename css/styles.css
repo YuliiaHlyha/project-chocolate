@@ -604,19 +604,18 @@ img {
   position: fixed;
   top: 0;
   background-color: rgba(76, 76, 76, 0.605);
-  /* display: flex; 
-  align-items: center;
-   justify-content: center; */
-
-  /* opacity: 0; 
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  opacity: 0;
   pointer-events: none;
-  visibility: hidden;*/
+  visibility: hidden;
 }
 
 .is-open {
-  /* opacity: 1; 
+  opacity: 1;
   pointer-events: auto;
-  visibility: hidden;*/
+  visibility: visible;
 }
 
 .modal {
@@ -646,13 +645,18 @@ img {
   text-align: left;
   max-width: 298px;
   margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
 }
 
 .modal-input {
   width: 100%;
   border: 1.5px solid rgba(17, 17, 17, 0.15);
   border-radius: 13px;
-  height: 68px;
   box-shadow: 0 5px 5px 0 rgba (0, 0, 0, 0.03);
   margin-bottom: 18px;
   background-color: transparent;
@@ -661,6 +665,11 @@ img {
   padding: 22px 24px;
   width: 436px;
   height: 68px;
+}
+
+.modal-input::placeholder {
+  font-size: 14px;
+  color: teal;
 }
 
 .modal-label {
