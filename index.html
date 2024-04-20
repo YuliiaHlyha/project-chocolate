@@ -224,6 +224,7 @@
       <section id="made" class="made">
         <div class="container">
           <h2 class="made-title">HOW IT’S <span class="accent">MADE?</span></h2>
+          <div class="made-wrap">
           <img
             src="./images/image-min.jpg"
             alt="Recipe"
@@ -231,6 +232,7 @@
             height="400"
             class="made-image"
           />
+          <div class="made-content">
           <h3 class="made-subtitle">
             Try our chocolates today and discover the perfect balance of flavor
           </h3>
@@ -265,10 +267,13 @@
               </p>
             </li>
           </ul>
+          </div>
+          </div>
         </div>
       </section>
 
       <section class="products">
+        <div class="container">
         <h2 class="products-title">OUR <span class="accent">PRODUCTS</span></h2>
         <ul class="products-list">
           <li class="products-item">
@@ -368,6 +373,7 @@
             <button class="products-btn" type="button">54 UAH</button>
           </li>
         </ul>
+        </div>
       </section>
 
       <section class="sellers">
@@ -463,9 +469,11 @@
 
     <footer class="footer">
       <div class="container">
+        <div class="footer-top">
         <p class="footer-text">
           <span class="accent">Chocolate</span> a delicious cure for a bad day
         </p>
+        <div class="footer-soc">
         <p class="footer-subtitle">Social networks</p>
         <ul class="footer-soc-list">
           <li class="footer-soc-item">
@@ -496,6 +504,8 @@
             /></a>
           </li>
         </ul>
+      </div>
+      <div class="footer-contacts-wrap">
         <p class="footer-subtitle">Contact us</p>
         <address class="footer-contacts">
           <ul class="footer-contacts-list">
@@ -511,6 +521,9 @@
             </li>
           </ul>
         </address>
+      </div>
+        </div>
+        <div class="footer-bottom">
         <ul class="footer-menu-list">
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="">Home</a>
@@ -522,17 +535,26 @@
             <a class="footer-menu-link" href="">Chocolate is loved</a>
           </li>
         </ul>
+        <form class="footer-form">
+        <label>
+        <input type="email" name="footer-email" class="footer-input" placeholder="Enter your email"/>
+        </label>
+        <button type="submit" class="footer-btn">Subscribe</button>
+        </form>
+      </div>
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-open-btn">X</button>
         <p class="modal-title">
           LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
         </p>
-        <form class="modal-form">
-          <label for="user-name" class="modal-label"><span>Name</span></label>
+        <div class="modal-form">
+          <div class="modal-field">
+          <label for="user-name" class="modal-label">Name</label>
+          <div class="modal-input-wrap">
           <input
             type="text"
             class="modal-input"
@@ -540,25 +562,46 @@
             name="user-name"
             id="user-name"
           />
-          <label for="user-email" class="modal-label"><span>Email</span></label>
-          <input
-            type="text"
-            class="modal-input"
-            placeholder="Enter email"
-            name="user-email"
-            id="user-email"
-          />
-          <label for="user-tel" class="modal-label"
-            ><span>Phone number</span></label
-          >
-          <input
-            type="text"
-            class="modal-input"
-            placeholder="Enter phone"
-            name="user-tel"
-            id="user-tel"
-          />
+          <svg class="modal-field-icon" width="24" height="24">
+            <use href="./images/icon.svg#icon-user"></use>
+          </svg>
+          </div>
+        </div>
           <div class="modal-field">
+            <label for="user-email" class="modal-label">Email</label>
+             <div class="modal-input-wrap">
+            <input
+              type="email"
+              class="modal-input"
+              placeholder="Enter email"
+              name="user-email"
+              id="user-email"
+            />
+            <svg class="modal-field-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-mail"></use>
+            </svg>
+             </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Phone number</label>
+             <div class="modal-input-wrap">
+            <input
+              type="phone"
+              class="modal-input"
+              placeholder="Enter phone"
+              name="user-tel"
+              id="user-tel"
+            />
+            <svg class="modal-field-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-phone"></use>
+            </svg>
+             </div>
+             <div class="modal-field">
+              <label for="" class="modal-label">Comment</label>
+              <textarea name="user-comment" id="user-comment" placeholder="Enter text" class="modal-text"></textarea>
+             </div>
+          </div>
+          <!-- <div class="modal-field">
             <label for="yes">yes</label>
             <input type="radio" id="yes" name="question" value="yes" />
             <label for="no">no</label>
@@ -572,7 +615,7 @@
             <input type="checkbox" id="two" name="count" value="two" />
             <label for="three">three</label>
             <input type="checkbox" id="three" name="count" value="three" />
-          </div>
+          </div> -->
 
           <div class="modal-field">
             <input
