@@ -34,6 +34,8 @@ address {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -46,8 +48,8 @@ img {
 }
 
 .container {
-  /* width: 320px; */
-  width: 1166px;
+  width: 320px;
+  /* width: 1166px; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -212,24 +214,26 @@ img {
 
 .features {
   background-color: #1e1823;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  /* padding-top: 20px; */
-  /* padding-bottom: 20px; */
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .features-list {
-  /padding-left: 18px;
-  padding-right: 18px;
+  /* padding-left: 18px;
+  padding-right: 18px; */
   display: flex;
   flex-wrap: wrap;
-  gap: 88px;
-  /* gap: 20px; */
+  /* gap: 88px; */
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .features-item {
-  width: calc((100% - 2 * 88px) / 3);
-  /* width: 100%; */
+  /* width: calc((100% - 2 * 88px) / 3); */
+  width: 100%;
 }
 
 .features-subtitle {
@@ -251,14 +255,18 @@ img {
 /*------------------- taste ------------------*/
 
 .taste {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  /* padding-top: 120px;
+  padding-bottom: 60px; */
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .taste-title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  /* font-size: 24px;
+  line-height: 1.17; */
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -281,17 +289,20 @@ img {
   color: #111;
   max-width: 486px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin-bottom: 32px;
 }
 
 .taste-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 32px;
+  /* gap: 24px 32px; */
+  gap: 20px;
 }
 
 .taste-item {
-  width: calc((100% - 3 * 32px) / 4);
+  /* width: calc((100% - 3 * 32px) / 4); */
+  width: 100%;
   border-radius: 15px;
   padding-top: 28px;
   padding-bottom: 28px;
@@ -331,29 +342,37 @@ img {
 /*----------------- made --------------------*/
 
 .made {
-  padding-top: 60px;
+  /* padding-top: 60px;
   padding-bottom: 60px;
+ */
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .made-wrap {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .made-content {
   background-color: #ffffff;
-  padding: 32px;
+  /* padding: 32px; */
+  padding: 20px 14px;
 }
 
 .made-title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  /* font-size: 24px;
+  line-height: 1.17; */
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
   color: #111;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
+  padding-bottom: 32px;
 }
 
 .made-title .accent {
@@ -369,7 +388,8 @@ img {
   line-height: 1.33;
   color: #111;
   max-width: 350px;
-  padding-bottom: 28px;
+  /* padding-bottom: 28px; */
+  padding-bottom: 20px;
 }
 
 .made-list {
@@ -392,7 +412,8 @@ img {
 }
 
 .made-item {
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
+  margin-bottom: 18px;
   position: relative;
   padding-left: 16px;
 }
@@ -851,4 +872,118 @@ img {
   border: none;
   background-color: #fd9222;
   fill: #eceded;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .features-list {
+    gap: 44px 88px;
+  }
+
+  .features-item {
+    width: calc((100% - 88px) / 2);
+  }
+
+  .taste {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .taste-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .taste-text {
+    margin-bottom: 50px;
+  }
+
+  .taste-list {
+    gap: 32px;
+  }
+
+  .taste-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .made > .container {
+    width: 678px;
+  }
+
+  .made {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .made-title {
+    font-size: 24px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+  }
+
+  .made-content {
+    padding: 32px;
+  }
+
+  .made-subtitle {
+    padding-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .made > .container {
+    width: 1166px;
+  }
+
+  .features-list {
+    gap: 88px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .features-item {
+    width: calc((100% - 2 * 88px) / 3);
+  }
+
+  .taste {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .taste-list {
+    gap: 24px 32px;
+  }
+
+  .taste-item {
+    width: calc((100% - 3 * 32px) / 4);
+  }
+
+  .made {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .made-wrap {
+    flex-wrap: nowrap;
+  }
+
+  .made-item {
+    margin-bottom: 24px;
+  }
 }
