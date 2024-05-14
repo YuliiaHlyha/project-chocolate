@@ -819,7 +819,6 @@ img {
   height: 68px;
   outline: transparent;
   transition: border-color 300ms linear;
-  margin-bottom: 18px;
 }
 
 .modal-input:focus {
